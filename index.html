@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="referrer" content="origin-when-cross-origin">
+
+        <title> Smooth scroll minified </title>
+
+        <style>
+            nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                padding: 5px;
+                background: white;
+                border-bottom: 1px solid black;
+            }
+
+            section {
+                padding: 22px;
+                height: 100vh;
+            }
+
+            section:nth-child(odd) {
+                background-color: #f0f0f0;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <nav> 
+            <a data-scroll href="#s1">Section 1</a>
+            <a data-scroll href="#s2">Section 2</a>
+            <a data-scroll href="#s3">Section 3</a>
+            <a data-scroll href="#s4">Section 4</a>
+        </nav>
+
+        <section id="s1"> Section 1 </section>
+        <section id="s2"> Section 2 </section>
+        <section id="s3"> Section 3 </section>
+        <section id="s4"> Section 4 </section>
+        <footer> <a data-scroll href="#"> Back to top </a> </footer>
+    </body>
+
+    <script src="bundle.min.js"></script>
+
+</html>
